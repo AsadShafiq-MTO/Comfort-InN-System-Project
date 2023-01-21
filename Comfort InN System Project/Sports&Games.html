@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+
+    <style>
+        .logo img {
+            /* margin-left: 20px; */
+            height: 85px;
+            padding: 10px;
+
+            /* margin: 15px 10px 15px 20px; */
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            /* animation: img infinite ease-in-out 5s; */
+            border-radius: 20px;
+
+        }
+
+        .navbar {
+            padding: 20px;
+        }
+
+        .navbar-brand {
+            /* color: #fff !important; */
+            color: aqua;
+            font-weight: bold;
+            font-style: italic;
+           
+            font-size: 50px;
+            text-transform: capitalize;
+        }
+
+        .navbar-nav {
+
+            padding-left: 100px;
+        }
+
+        .nav-link {
+            font-weight: bold;
+            font-style: italic;
+            color: #fff !important;
+            margin-left: 5px;
+            transition: 0.6s;
+            border-radius: 20px;
+
+        }
+
+        .nav-link:hover {
+            transform: translateY(-20px);
+            background-color: red;
+        }
+
+
+        .header {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header .img-parent {
+
+            display: inline-flexbox;
+            position: relative;
+
+        }
+
+        .header img {
+
+            display: inline-flexbox;
+            height: 100vh;
+            width: 100%;
+
+
+        }
+
+        .img {
+            display: inline-flexbox;
+        }
+
+        .container {
+            display: inline-flexbox;
+            height: 100vh;
+            width: 100%;
+            position: relative;
+        }
+
+        .bg-img {
+            /* The image used */
+            background-image: url("https://cdn.pixabay.com/photo/2016/11/29/02/05/audience-1866738_960_720.jpg");
+
+            /* Control the height of the image */
+            min-height: 1050px;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Add styles to the form container */
+        .container {
+            position: absolute;
+            right: 0;
+            margin: 20px;
+            max-width: 300px;
+            padding: 16px;
+            background-color: white;
+            min-height: 1000px;
+        }
+
+        /* Full-width input fields */
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Set a style for the submit button */
+        .btn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            border-radius: 45PX;
+            /* border: none; */
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .btn:hover {
+            opacity: 1;
+        }
+    </style>
+    <title>Sports & Games</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.PNG" alt="img">
+            </div>
+            <a href="" class="navbar-brand" >"Train hard,Win Easy"</a>
+            <div class="manu-bar">
+                <ul class="navbar-nav">
+                    <li class="new-item"><a href="Home.html" class="nav-link">Home</a></li>
+
+                    <li class="new-item"><a href="" class="nav-link">Contact</a></li>
+                    <li class="new-item"><a href="" class="nav-link">History</a></li>
+
+                </ul>
+
+            </div>
+    </nav>
+
+
+    <div class="header">
+
+        <div class="img-parent">
+            <div class="img">
+
+                <!-- <img src="https://i0.wp.com/menuprices.pk/wp-content/uploads/2020/09/Coffee-Planet-Johar-town-Lahore-1.jpg?ssl=1" alt=""> -->
+
+                <div class="bg-img">
+                    <form action="/action_page.php" class="container">
+                        <h4><b>Event Management</b></h4>
+
+                        <label for="text"><b>Title of Event</b></label>
+                        <input type="text" placeholder="Enter Title" name="Title" required>
+                         
+                        <label for="text"><b>Place</b></label>
+                        <input type="text" placeholder="Enter Place" name="Place" required>
+                        
+                        <label for="text"><b>Vanue</b></label>
+                        <input type="text" placeholder="Enter Vanue" name="Vanue" required>
+                        
+                        
+                        <label for="Year"><b>Year</b></label>
+                        <input type="date" placeholder="Enter Year" name="Year" required><br><br>
+                        
+                        <label for="Duration"><b>Duration</b></label>
+                        <input type="text" placeholder="Enter Duration" name="Duration" required>
+                        
+                        <label for="text"><b>Target Audience</b></label>
+                        <input type="text" placeholder="Enter Target Audience" name=" Audience" required>
+                       
+                        <label for="text"><b>No of Audience</b></label>
+                        <input type="text" placeholder="Enter No of Audience" name="Audience" required>
+                        
+                        <label for="text"><b>Costing</b></label>
+                        <input type="text" placeholder="Enter Costing" name="Costing" required>
+                        
+                       
+                        <button type="submit" class="btn"><a href="Home.html" class="nav-link">Submit</a></button>
+                    </form>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

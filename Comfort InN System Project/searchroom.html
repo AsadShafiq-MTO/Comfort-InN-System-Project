@@ -1,0 +1,140 @@
+<!DOCTYPE html>  
+<html>  
+ <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: darkblue;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightgrey;  
+}  
+  
+  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 2;  
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 520px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#availabilityDIV {
+  width: 100%;
+  display=none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>  
+</head>  
+<script>
+function showavailability() {
+var x = document.getElementById("availabilityDIV");
+     x.style.display = "block";
+}
+</script>
+
+<body>  
+ 
+  <div class="container">  
+<div class="row">
+  <div class="column" style="height:100px;width:40%;">
+	
+<img src="logo.PNG" float="left" padding="10px" height="95px" style="border-radius:20px;">
+
+</div>
+  <div class="column" style="height:100px;"> 	
+
+	 <h1>Search Room Availabilty</h1>  
+</div>
+</div>
+  <hr>
+
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+</div>  
+
+<div>  
+<label>   
+Room Type :  
+</label>   
+  
+<select>  
+<option value="separate">Separate</option>  
+<option value="shared">Shared</option>   
+</select>  
+</div>
+
+<div>  
+<label>   
+Air-Conditioned Room :  
+</label><br>  
+<input type="radio" value="yes" name="ac" checked > Yes  
+<input type="radio" value="no" name="ac"> No
+ 
+</div> 
+ 
+    <button  class="registerbtn" onclick="showavailability()">Search</button>
+<div id="availabilityDIV"  style="display:none;">
+<center>
+<h1> Congratulation: Room Available </h1>
+
+<a href="registration.html" class="next">Proceed for Registration &raquo;</a>
+
+</center>
+</div>
+
+</body>  
+</html>  

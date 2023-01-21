@@ -1,0 +1,47 @@
+<html>
+<title>Log in</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<script type="text/javascript">
+function user1() {
+user = document.getElementById('username').value;
+pass = document.getElementById('password').value;
+room = document.getElementById('room').value;
+  if (user == "rahat" && pass == "1234" && room=="5") {
+	location.replace("breakfast.html")
+  } else {
+    alert('Incorrect Credentials');
+  }
+}
+</script>
+<body >
+<center>
+
+<div style="margin-top:100px;text-align:left;height:70%;width:27%;border-style:solid;border:none;">
+
+<div class="row">
+<img src="logo.PNG" float="left" width="80" height="80">
+<h1 style="text-align:center;background-color:orange;width:450;border-radius:0px;">Comfort InN</h1>
+</div><br><br>
+<body>
+<style>
+.row {
+  display: flex;
+}
+</style>
+<label style="float:left" >Username</label>
+
+<a href="registration.html" title="Sign up" style="float:right;color:green">Sign up</a>
+<label style="float:right">Need an account?</label><br>
+<input size="48" type="text" id="username" Placeholder="enter username"><br><br>
+<label> Password</label><br>
+<input size="48" type="password" id="password" Placeholder="enter password"><br><br>
+<label> Room Number#</label><br>
+<input size="48" type="text" id="room" Placeholder="enter room number"><br><br>
+
+<center>
+<button style="padding:10px 160px; background-color:green;border-radius:18px;color:white; cursor:pointer;" onclick="user1()">Log in</button><br><br>
+</center>
+</div></center>
+</body>
+</html>
